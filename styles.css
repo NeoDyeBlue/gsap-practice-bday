@@ -380,7 +380,7 @@ li {
 .c-intro-text {
   text-align: center;
   color: #171d1c;
-  background-color: #16bac5;
+  background-color: #5863f8;
   padding: 1rem;
 }
 
@@ -518,7 +518,7 @@ li {
 .c-quote-1__subtext {
   width: 50%;
   color: #171d1c;
-  background-color: #16bac5;
+  background-color: #5863f8;
   padding: 1rem;
 }
 
@@ -665,7 +665,7 @@ li {
   text-align: right;
   width: 50%;
   color: #171d1c;
-  background-color: #16bac5;
+  background-color: #5863f8;
   padding: 1rem;
 }
 
@@ -708,7 +708,7 @@ li {
 
 .c-travel-text__subtext {
   color: #171d1c;
-  background-color: #16bac5;
+  background-color: #5863f8;
   padding: 1rem;
 }
 
@@ -805,7 +805,7 @@ li {
       -ms-grid-row-align: center;
       align-self: center;
   color: #171d1c;
-  background-color: #16bac5;
+  background-color: #5863f8;
   padding: 1rem;
 }
 
@@ -839,6 +839,6 @@ li {
 .c-end-text__subtext {
   color: #171d1c;
   padding: 1rem;
-  background-color: #16bac5;
+  background-color: #5863f8;
 }
 /*# sourceMappingURL=styles.css.map */
