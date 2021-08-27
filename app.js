@@ -12,13 +12,13 @@ const navVolBtn = document.querySelector(".c-volume-button");
 //video element
 const video = document.querySelector(".c-video");
 
-const tiktokVideos = [
-  "/media/tiktokvid1.mp4",
-  "/media/tiktokvid2.mp4",
-  "/media/tiktokvid3.mp4",
-];
+// const tiktokVideos = [
+//   "/media/tiktokvid1.mp4",
+//   "/media/tiktokvid2.mp4",
+//   "/media/tiktokvid3.mp4",
+// ];
 
-var activeVid = 0;
+// var activeVid = 0;
 
 //marquee elements
 const marqueeContainer = document.querySelector(".c-marquee");
@@ -95,11 +95,11 @@ navVolBtn.addEventListener("click", () => {
 });
 
 //play videos
-video.addEventListener("ended", () => {
-  activeVid = ++activeVid % tiktokVideos.length;
-  video.src = tiktokVideos[activeVid];
-  video.play;
-});
+// video.addEventListener("ended", () => {
+//   activeVid = ++activeVid % tiktokVideos.length;
+//   video.src = tiktokVideos[activeVid];
+//   video.play;
+// });
 
 //timelines
 const navStTl = gsap.timeline({
