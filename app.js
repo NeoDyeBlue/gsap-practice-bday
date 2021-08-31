@@ -3,6 +3,9 @@ gsap.registerPlugin(ScrollTrigger, CSSRulePlugin, MotionPathPlugin);
 //main
 const grid = document.querySelector(".l-grid");
 
+//loader
+const loaderGrid = document.querySelector(".l-grid__loader");
+
 //nav elements
 const navGrid = document.querySelector(".l-grid__nav");
 const navTextJen = document.querySelector(".c-webtitle");
@@ -82,6 +85,11 @@ const galleryImagesEven = gsap.utils.toArray(
 //end elements
 const endGrid = document.querySelector(".l-grid__end");
 const endHeader = document.querySelector(".c-end-header");
+
+window.addEventListener("load", () => {
+  grid.classList.remove("l-grid--unscrollable");
+  loaderGrid.classList.remove("l-grid__loader--visible");
+});
 
 //button click
 navVolBtn.addEventListener("click", () => {

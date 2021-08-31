@@ -6,13 +6,13 @@ $magnolia: #efe9f4;
 $maya-blue: #5fbff9;
 $maximum-blue-green: #16bac5;
 
-@keyframes marqueeAnim {
+@keyframes spin {
   0% {
-    left: 0;
+    transform: rotate(0deg);
   }
 
   100% {
-    left: -100%;
+    transform: rotate(360deg);
   }
 }
 
@@ -66,6 +66,30 @@ li {
   z-index: 1;
   isolation: isolate;
 
+  &--unscrollable {
+    height: 100%;
+  }
+
+  &__loader {
+    background-color: $magnolia;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+
+    &--visible {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
   &__nav {
     width: 100%;
     display: flex;
@@ -73,7 +97,7 @@ li {
     justify-content: space-between;
     position: fixed;
     top: 0;
-    z-index: 999;
+    z-index: 998;
   }
 
   &__video {
@@ -156,6 +180,57 @@ li {
     justify-content: center;
     align-items: center;
   }
+}
+
+//loader
+.c-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 25vw;
+  height: 25vw;
+  max-width: 150px;
+  max-height: 150px;
+
+  &__first {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    max-width: inherit;
+    max-height: inherit;
+    border: 10px solid transparent;
+    border-top: 10px solid $maya-blue;
+    border-radius: 50%;
+    animation: spin 5000ms infinite linear;
+  }
+
+  &__second {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    max-width: inherit;
+    max-height: inherit;
+    border: 10px solid transparent;
+    border-top: 10px solid $neon-blue;
+    border-radius: 50%;
+    animation: spin 3000ms infinite linear;
+  }
+
+  &__icon {
+    font-size: clamp(2rem, 12vw, 2.5rem);
+    color: $dark-jungle-green;
+
+    &--neon-blue {
+      color: $neon-blue;
+    }
+  }
+}
+
+.c-loader-text {
+  background-color: $maya-blue;
+  padding: 1rem;
+  margin-top: 5vw;
 }
 
 //navigation
