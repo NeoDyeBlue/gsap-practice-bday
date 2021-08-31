@@ -65,6 +65,7 @@ li {
   overflow: hidden;
   z-index: 1;
   isolation: isolate;
+  height: auto;
 
   &--unscrollable {
     height: 100%;

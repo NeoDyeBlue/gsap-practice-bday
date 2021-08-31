@@ -71,6 +71,7 @@ li {
   overflow: hidden;
   z-index: 1;
   isolation: isolate;
+  height: auto;
 }
 
 .l-grid--unscrollable {
