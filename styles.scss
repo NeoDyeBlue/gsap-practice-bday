@@ -247,6 +247,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
   font-size: clamp(2.5rem, 12vw, 3.5rem);
 
   &__text {

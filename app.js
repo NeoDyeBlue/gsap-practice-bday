@@ -3,7 +3,7 @@ gsap.registerPlugin(ScrollTrigger, CSSRulePlugin, MotionPathPlugin);
 //main
 const grid = document.querySelector(".l-grid");
 
-//loader
+//loader element
 const loaderGrid = document.querySelector(".l-grid__loader");
 
 //nav elements
@@ -14,14 +14,6 @@ const navVolBtn = document.querySelector(".c-volume-button");
 
 //video element
 const video = document.querySelector(".c-video");
-
-// const tiktokVideos = [
-//   "/media/tiktokvid1.mp4",
-//   "/media/tiktokvid2.mp4",
-//   "/media/tiktokvid3.mp4",
-// ];
-
-// var activeVid = 0;
 
 //marquee elements
 const marqueeContainer = document.querySelector(".c-marquee");
@@ -100,6 +92,10 @@ navVolBtn.addEventListener("click", () => {
     navVolBtn.textContent = "volume_up";
     video.muted = true;
   }
+});
+
+navTextJen.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
 //play videos
