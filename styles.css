@@ -35,6 +35,10 @@ body {
   height: 100%;
 }
 
+body {
+  overflow: hidden;
+}
+
 hr {
   width: 80%;
   margin-top: 1.5rem;
@@ -68,14 +72,8 @@ li {
   display: grid;
   position: relative;
   background-color: #efe9f4;
-  overflow: hidden;
+  overflow-x: hidden;
   z-index: 1;
-  isolation: isolate;
-  height: auto;
-}
-
-.l-grid--unscrollable {
-  height: 100%;
 }
 
 .l-grid__loader {

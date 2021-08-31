@@ -87,7 +87,7 @@ const endGrid = document.querySelector(".l-grid__end");
 const endHeader = document.querySelector(".c-end-header");
 
 window.addEventListener("load", () => {
-  grid.classList.remove("l-grid--unscrollable");
+  document.body.style.overflow = "visible";
   loaderGrid.classList.remove("l-grid__loader--visible");
 });
 

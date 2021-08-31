@@ -30,6 +30,10 @@ body {
   height: 100%;
 }
 
+body {
+  overflow: hidden;
+}
+
 hr {
   width: 80%;
   margin-top: 1.5rem;
@@ -62,14 +66,8 @@ li {
   display: grid;
   position: relative;
   background-color: $magnolia;
-  overflow: hidden;
+  overflow-x: hidden;
   z-index: 1;
-  isolation: isolate;
-  height: auto;
-
-  &--unscrollable {
-    height: 100%;
-  }
 
   &__loader {
     background-color: $magnolia;
