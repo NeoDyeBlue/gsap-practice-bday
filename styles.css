@@ -175,7 +175,7 @@ li {
   height: 100vh;
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 40.625em) {
   .l-grid__header {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -368,10 +368,16 @@ li {
 
 .c-marquee__text {
   font-family: "Josefin Sans", sans-serif;
-  font-size: 30vw;
+  font-size: 35vh;
   color: #efe9f4;
   text-transform: uppercase;
   padding: 0 0.5em;
+}
+
+@media screen and (min-width: 40.625em) {
+  .c-marquee__text {
+    font-size: 35vw;
+  }
 }
 
 .c-header {
@@ -396,7 +402,7 @@ li {
   color: #5863f8;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 53.125em) {
   .c-header {
     padding: 0;
     -webkit-box-pack: center;
@@ -412,7 +418,7 @@ li {
   max-height: 600px;
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 40.625em) {
   .c-subject {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -433,7 +439,7 @@ li {
   background-size: contain;
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 40.625em) {
   .c-subject__image {
     top: -10%;
     left: 0;
@@ -455,7 +461,7 @@ li {
   z-index: -1;
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 40.625em) {
   .c-subject__shadow {
     top: -5%;
     left: 10%;
@@ -501,7 +507,7 @@ li {
   max-height: 500px;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 53.125em) {
   .c-quote-1__image-container {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -528,7 +534,7 @@ li {
   right: -20%;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 53.125em) {
   .c-quote-1__image {
     left: 0;
   }
@@ -547,7 +553,7 @@ li {
   z-index: -1;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 53.125em) {
   .c-quote-1__shadow {
     left: -10%;
   }
@@ -617,7 +623,7 @@ li {
   padding: 1rem;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 53.125em) {
   .c-quote-1 {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -648,7 +654,7 @@ li {
   max-height: 500px;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 53.125em) {
   .c-quote-2__image-container {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -675,7 +681,7 @@ li {
   left: -20%;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 53.125em) {
   .c-quote-2__image {
     left: 0;
   }
@@ -694,7 +700,7 @@ li {
   z-index: -1;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 53.125em) {
   .c-quote-2__shadow {
     left: 10%;
   }
@@ -764,7 +770,7 @@ li {
   padding: 1rem;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 53.125em) {
   .c-quote-2 {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -838,7 +844,7 @@ li {
   margin-top: 2rem;
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 40.625em) {
   .c-travel-gallery__img-container:nth-child(odd) {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -874,7 +880,7 @@ li {
           box-shadow: 10px 20px 0 #5fbff9;
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 40.625em) {
   .c-travel-gallery__image {
     max-width: 50%;
     height: 100%;
