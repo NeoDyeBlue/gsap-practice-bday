@@ -19,6 +19,10 @@ const video = document.querySelector(".c-video");
 const marqueeContainer = document.querySelector(".c-marquee");
 const marqueeText = gsap.utils.toArray(".c-marquee__text");
 
+//progress elements
+const progressLine = document.querySelector(".c-progress__line");
+const svgCycler = document.getElementById("cyclerjen");
+
 //header elements
 const headerGrid = document.querySelector(".l-grid__header");
 const headerText = document.querySelector(".c-header__text");
@@ -129,6 +133,14 @@ const marqueeScrubStTl = gsap.timeline({
   },
 });
 
+const progressScrubStTl = gsap.timeline({
+  scrollTrigger: {
+    trigger: grid,
+    start: "top top",
+    scrub: true,
+  },
+});
+
 const headerScrubStTl = gsap.timeline({
   scrollTrigger: {
     trigger: headerGrid,
@@ -208,6 +220,14 @@ marqueeText.forEach((text) => {
     0
   );
 });
+
+progressScrubStTl.from(
+  progressLine,
+  {
+    height: 0,
+  },
+  0
+);
 
 headerScrubStTl
   .from(

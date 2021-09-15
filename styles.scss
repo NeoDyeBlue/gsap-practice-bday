@@ -4,7 +4,8 @@ $neon-blue: #5863f8;
 $dark-jungle-green: #171d1c;
 $magnolia: #efe9f4;
 $maya-blue: #5fbff9;
-$maya-blue-70: rgba(95, 191, 249, 0.7);
+$maya-blue-70: rgba(95, 191, 249, 0.75);
+$dark-jungle-green-70: rgba(23, 29, 28, 0.6);
 $maximum-blue-green: #16bac5;
 
 @keyframes spin {
@@ -55,6 +56,7 @@ h6 {
 
 h2 {
   font-size: clamp(2.5rem, 12vw, 3.5rem);
+  text-shadow: 0px 0px 30px $dark-jungle-green-70;
 }
 
 p,
@@ -113,7 +115,17 @@ li {
       height: 100%;
       top: 0;
       left: 0;
-      background-color: rgba($color: #efe9f4, $alpha: 0.6);
+      // background: linear-gradient(
+      //   0deg,
+      //   rgba(22, 186, 197, 1) 5%,
+      //   rgba(239, 233, 244, 1) 100%
+      // );
+      background: linear-gradient(
+        0deg,
+        rgba(95, 191, 249, 1) 0%,
+        rgba(239, 233, 244, 1) 20%
+      );
+      opacity: 0.7;
       // background-color: ;
     }
   }
@@ -128,6 +140,16 @@ li {
     justify-content: flex-start;
     overflow: hidden;
     z-index: -999;
+  }
+
+  &__progress {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -998;
+    top: 0;
   }
 
   &__header {
@@ -293,6 +315,32 @@ li {
   }
 }
 
+//progress
+.c-progress {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 2vw;
+
+  &__line {
+    width: 1rem;
+    height: 100%;
+    background: linear-gradient(
+      180deg,
+      rgba(22, 186, 197, 1) 30%,
+      rgba(137, 171, 227, 0) 100%
+    );
+    transform-origin: top center;
+  }
+}
+
+#cyclerjen {
+  width: 150px;
+  margin-top: -50%;
+  margin-bottom: -50%;
+}
+
 //header
 .c-header {
   display: flex;
@@ -305,6 +353,7 @@ li {
   &__text {
     font-size: clamp(6rem, 25vw, 13.75rem);
     color: $dark-jungle-green;
+    text-shadow: 0px 0px 30px $dark-jungle-green-70;
 
     &--neon-blue {
       color: $neon-blue;
