@@ -59,7 +59,6 @@ h6 {
 
 h2 {
   font-size: clamp(2.5rem, 12vw, 3.5rem);
-  text-shadow: 0px 0px 30px rgba(23, 29, 28, 0.6);
 }
 
 p,
@@ -399,7 +398,6 @@ li {
 .c-header__text {
   font-size: clamp(6rem, 25vw, 13.75rem);
   color: #171d1c;
-  text-shadow: 0px 0px 30px rgba(23, 29, 28, 0.6);
 }
 
 .c-header__text--neon-blue {
