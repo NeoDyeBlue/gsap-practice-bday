@@ -4,6 +4,7 @@ $neon-blue: #5863f8;
 $dark-jungle-green: #171d1c;
 $magnolia: #efe9f4;
 $maya-blue: #5fbff9;
+$maya-blue-70: rgba(95, 191, 249, 0.7);
 $maximum-blue-green: #16bac5;
 
 @keyframes spin {
@@ -357,6 +358,7 @@ li {
     left: -10%;
     bottom: -5%;
     z-index: -1;
+    opacity: 0.7;
 
     @media screen and (min-width: 40.625em) {
       top: -5%;
@@ -379,7 +381,7 @@ li {
 .c-intro-text {
   text-align: center;
   color: $dark-jungle-green;
-  background-color: $maya-blue;
+  background-color: $maya-blue-70;
   padding: 1rem;
 }
 
@@ -432,7 +434,7 @@ li {
     left: 10%;
     bottom: -5%;
     border-radius: 50%;
-    background-color: $maya-blue;
+    background-color: $maya-blue-70;
     z-index: -1;
 
     @media screen and (min-width: 53.125em) {
@@ -482,7 +484,7 @@ li {
   &__subtext {
     width: 50%;
     color: $dark-jungle-green;
-    background-color: $maya-blue;
+    background-color: $maya-blue-70;
     padding: 1rem;
   }
 
@@ -540,7 +542,7 @@ li {
     left: -10%;
     bottom: -5%;
     border-radius: 50%;
-    background-color: $maya-blue;
+    background-color: $maya-blue-70;
     z-index: -1;
 
     @media screen and (min-width: 53.125em) {
@@ -591,7 +593,7 @@ li {
     text-align: right;
     width: 50%;
     color: $dark-jungle-green;
-    background-color: $maya-blue;
+    background-color: $maya-blue-70;
     padding: 1rem;
   }
 
@@ -621,7 +623,7 @@ li {
 
   &__subtext {
     color: $dark-jungle-green;
-    background-color: $maya-blue;
+    background-color: $maya-blue-70;
     padding: 1rem;
   }
 }
@@ -664,12 +666,12 @@ li {
 
     &:nth-child(odd) {
       align-self: flex-end;
-      box-shadow: -10px 20px 0 $maya-blue;
+      box-shadow: -10px 20px 0 $maya-blue-70;
     }
 
     &:nth-child(even) {
       align-self: flex-start;
-      box-shadow: 10px 20px 0 $maya-blue;
+      box-shadow: 10px 20px 0 $maya-blue-70;
     }
 
     @media screen and (min-width: 40.625em) {
@@ -679,12 +681,12 @@ li {
 
       &:nth-child(odd) {
         align-self: flex-end;
-        box-shadow: -20px 30px 0 $maya-blue;
+        box-shadow: -20px 30px 0 $maya-blue-70;
       }
 
       &:nth-child(even) {
         align-self: flex-start;
-        box-shadow: 20px 30px 0 $maya-blue;
+        box-shadow: 20px 30px 0 $maya-blue-70;
       }
     }
   }
@@ -694,7 +696,7 @@ li {
   margin: 1rem 0;
   align-self: center;
   color: $dark-jungle-green;
-  background-color: $maya-blue;
+  background-color: $maya-blue-70;
   padding: 1rem;
 }
 
@@ -719,6 +721,6 @@ li {
   &__subtext {
     color: $dark-jungle-green;
     padding: 1rem;
-    background-color: $maya-blue;
+    background-color: $maya-blue-70;
   }
 }
